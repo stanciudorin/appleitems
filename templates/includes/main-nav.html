@@ -17,9 +17,9 @@
                 Macbooks
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="macbook-link">
-                <a href="" class="dropdown-item">Macbook Air</a>
-                <a href="" class="dropdown-item">Macbook Pro</a>
-                <a href="" class="dropdown-item">All Macbooks</a>
+                <a href="{% url 'products' %}?category=macbook_air" class="dropdown-item">Macbook Air</a>
+                <a href="{% url 'products' %}?category=macbook_pro" class="dropdown-item">Macbook Pro</a>
+                <a href="{% url 'products' %}?category=macbook_air,macbook_pro" class="dropdown-item">All Macbooks</a>
             </div>
         </li>
 
@@ -28,9 +28,9 @@
                 iPhones
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="iphone-link">
-                <a href="" class="dropdown-item">iPhone 11</a>
-                <a href="" class="dropdown-item">iPhone 12</a>
-                <a href="" class="dropdown-item">All iPhones</a>
+                <a href="{% url 'products' %}?category=iphone_11" class="dropdown-item">iPhone 11</a>
+                <a href="{% url 'products' %}?category=iphone_12" class="dropdown-item">iPhone 12</a>
+                <a href="{% url 'products' %}?category=iphone_11,iphone_12" class="dropdown-item">All iPhones</a>
             </div>
         </li>
 
@@ -39,9 +39,9 @@
                 Apple Watches
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="watch-link">
-                <a href="" class="dropdown-item">Series 5</a>
-                <a href="" class="dropdown-item">Series 6</a>
-                <a href="" class="dropdown-item">All Watches</a>
+                <a href="{% url 'products' %}?category=smartwatch_5" class="dropdown-item">Series 5</a>
+                <a href="{% url 'products' %}?category=smartwatch_6" class="dropdown-item">Series 6</a>
+                <a href="{% url 'products' %}?category=smartwatch_5,smartwatch_6" class="dropdown-item">All Watches</a>
             </div>
         </li>
 
@@ -50,9 +50,9 @@
                 iPads
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="ipad-link">
-                <a href="" class="dropdown-item">iPad Air</a>
-                <a href="" class="dropdown-item">iPad Pro</a>
-                <a href="" class="dropdown-item">All iPads</a>
+                <a href="{% url 'products' %}?category=ipad_air" class="dropdown-item">iPad Air</a>
+                <a href="{% url 'products' %}?category=ipad_pro" class="dropdown-item">iPad Pro</a>
+                <a href="{% url 'products' %}?category=ipad_air,ipad_pro" class="dropdown-item">All iPads</a>
             </div>
         </li>
 
@@ -61,10 +61,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=all_specials" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
