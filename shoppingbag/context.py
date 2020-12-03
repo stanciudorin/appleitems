@@ -40,6 +40,4 @@ def shoppingbag_contents(request):
         'grand_total': grand_total
     }
 
-    context = {}
-
     return context
