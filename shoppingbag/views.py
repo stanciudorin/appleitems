@@ -5,7 +5,9 @@ from products.models import Product
 
 
 def view_shoppingbag(request):
+    
     """ Returning the index page """
+    shoppingbag = request.session.get('shoppingbag', {})
     return render(request, "shoppingbag/shoppingbag.html")
 
 
@@ -41,10 +43,10 @@ def adjust_bag(request, item_id):
         messages.success(request, f'Updated {product.name} quantity to {shoppingbag[item_id]}')
     else:
         shoppingbag.pop(item_id)
-        messages.success(request, f'Removed {product.nema} from your bag')
+        messages.success(request, f'Removed {product.name} from your bag')
 
     request.session['shoppingbag'] = shoppingbag
-    return redirect(reverse('view_bag'))
+    return redirect(reverse('view_shoppingbag'))
     
 
 def remove_from_bag(request, item_id):
