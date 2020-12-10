@@ -5,9 +5,10 @@ from django.conf import settings
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
+
 from products.models import Product
-from profiles.forms import UserProfileForm
 from profiles.models import UserProfile
+from profiles.forms import UserProfileForm
 from shoppingbag.context import shoppingbag_contents
 
 import stripe
@@ -26,8 +27,8 @@ def cache_checkout_data(request):
         })
         return HttpResponse(status=200)
     except Exception as e:
-        messages.error(request, "Sorry, your payment cannot be \
-            processed right now. Please try again later.")
+        messages.error(request, 'Sorry, your payment cannot be \
+            processed right now. Please try again later.')
         return HttpResponse(content=e, status=400)
 
 
@@ -36,7 +37,7 @@ def checkout(request):
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
     if request.method == 'POST':
-        bag = request.session.get('bag', {})
+        bag = request.session.get('shoppingbag', {})
 
         form_data = {
             'full_name': request.POST['full_name'],
@@ -66,6 +67,15 @@ def checkout(request):
                             quantity=item_data,
                         )
                         order_line_item.save()
+                    else:
+                        for size, quantity in item_data['items_by_size'].items():
+                            order_line_item = OrderLineItem(
+                                order=order,
+                                product=product,
+                                quantity=quantity,
+                                product_size=size,
+                            )
+                            order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
                         "One of the products in your shoppingbag \
@@ -73,7 +83,7 @@ def checkout(request):
                         "Please call us for assistance!")
                     )
                     order.delete()
-                    return redirect(reverse('view_bag'))
+                    return redirect(reverse('view_shoppingbag'))
 
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))
@@ -82,7 +92,7 @@ def checkout(request):
                 Please double check your information.')
 
     else:
-        bag = request.session.get('bag', {})
+        bag = request.session.get('shoppingbag', {})
         if not bag:
             messages.error(request, "There's nothing in your bag at the moment")
             return redirect(reverse('products'))
@@ -127,7 +137,7 @@ def checkout(request):
     }
 
     return render(request, template, context)
-    
+
 
 def checkout_success(request, order_number):
     """Handle successfull checkouts"""
@@ -159,8 +169,8 @@ def checkout_success(request, order_number):
         Your order number is {order_number}. A confirmation\
         email will be sent to {order.email}.')
 
-    if 'bag' in request.session:
-        del request.session['bag']
+    if 'shoppingbag' in request.session:
+        del request.session['shoppingbag']
 
     template = 'checkout/checkout_success.html'
     context = {
