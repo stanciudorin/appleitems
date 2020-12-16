@@ -1,11 +1,10 @@
 from django.contrib import admin
-from embed_video.admin import AdminVideoMixin
 from .models import Item
 
 # Register your models here.
 
 
-class MyModelAdmin(AdminVideoMixin, admin.ModelAdmin):
+class MyModelAdmin(admin.ModelAdmin):
     pass
 
 
