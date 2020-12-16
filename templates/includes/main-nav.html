@@ -67,5 +67,15 @@
                 <a href="{% url 'products' %}?category=all_specials" class="dropdown-item">All Specials</a>
             </div>
         </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black ml-5" href="#" id="media-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Media
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="ipad-link">
+                <a href="{% url 'videopress' %}?videopress=items" class="dropdown-item">Videos</a>
+                <a href="{% url 'articles' %}?articles=articles" class="dropdown-item">Articles</a>
+            </div>
+        </li>
     </ul>
 </div>

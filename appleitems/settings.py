@@ -49,9 +49,12 @@ INSTALLED_APPS = [
     'checkout',
     'crispy_forms',
     'profiles',
+    'embed_video',
 
     # Other
     'storages',
+    'videopress',
+    'articles',
 ]
 
 MIDDLEWARE = [

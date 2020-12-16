@@ -1,0 +1,4 @@
+/* Articles are displayed as cards */
+.card-group {
+    display: flex;
+}
