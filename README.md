@@ -1,28 +1,28 @@
-# MILESTONE PROJECT 3: [Apple Items](https://appleitems.herokuapp.com/)
+# MILESTONE PROJECT 4: [Apple Items](https://appleitems.herokuapp.com/)
 
 ## SOURCE: [Project Repository](https://github.com/stanciudorin/appleitems)
 
 ## ABOUT THE PROJECT
-<p>This is the website for APPLE ITEMS, and e-commerce fictional website for a start-up that wants to promote their business and sell their products online around the world.
+<p>This is the website for APPLE ITEMS, and e-commerce fictional website for a start-up that wants to promote their business and sell their products online.
 
 The business if based on selling the well known Apple braded products, from iphones, macbooks, smartwatches to ipads, minis and more, this potential business could bring generous revenues if it is taken to the next level.
 
-Users can purchase Apple product with or without having an account on the website, however having an account brings extra features as showing past orders information and havind delivey addresses saved to their account.
+Users can purchase Apple product with or without having an account on the website, however having an account brings extra features as showing past orders information and having delivey addresses saved to their account.
 
 </p>
 
 ## USER STORIES
 
  ### Business Goals
-The following are the user stories this e-commerce website has bee built one:
+The following are the user stories this e-commerce website has been built on:
 * A user that wants to see all categories and all products the website offers without having to register as a customer.
-* A user that wants to see all categories and all products the website offers even if he/she is a current user.
+* A user that wants to see all categories and all products the website offers even if he/she is a current customer.
 * A user wants to look around the shop and search for the products they want in order to compare different options of the item they are looking for, especially how the product looks like and its description.
 * A user that wants to access a single product page and see individual products
 * A registered user that wants to store their personal details so they are available as default for future orders from the shop.
 * A registered user that wants to check what items they have purchased from the shop in previous orders and have a summary of all of them.
 * A user/registered user that wants to purchase the products in an easy and seamless way.
-* Having a professional design the business desires to attract customers from all over the world, being able, at checkout, to despatch everywhere on the glode.
+* Having a professional design the business desires to attract customers from all over the world, being able, at checkout, to despatch everywhere on the globe.
 
 ## FEATURES
 
@@ -31,19 +31,19 @@ The following are the user stories this e-commerce website has bee built one:
 #### Shop
 
 * A user, authenticated or not, can peruse the different products available at the shop. They can search for items using the search bar, filter their search selecting any of the categories and subcategories narrowing down the options to those they are looking for, and also sort the items by category, price, product name or brand name.
-* Users can view more details of the desire item by clicking on the prodcut image or on the details button shown below the image only for the products that require the selection of a size before the purchase.
+* Users can view more details of the desire item by clicking on the prodcut image.
 * Once the user has chosen their desire size, when applicable, and number of items wanted, they can add then to the shopping bag. After doing so, they can either go back to the shop to look for other products, or review the items they have in their shopping bag before procceding to the checkout page. User can update the number of items or remove the items completely directly from the shopping bag.
 * If they user is happy with the items in their bag, they can finish the purchase filling up the checkout form, inclusive of some personal details to be included in the order and the credit or debit card they want to use for the payment. Once the payment is accepted, they can see a summary of their order. At this same time, an email is sent to the email address provided.
 
 #### Logging in
 * Members that have finished the sign up process can log in from the home page using either their email address or username selected during the registration and their password. If they have forgotten the password, they can reset this by clicking the link on the log in page.
-* After a successful log in, the user is redirected to their profile page, where they can review their personal details, their membership subscription and any previous orders from the shop, if any.
+* After a successful log in, the user is redirected to their profile page, where they can review their personal details and any previous orders from the shop, if any.
 * The member can update their personal details directly from the link on the profile page, which will display a form pre-filled with their current information.
 
 ### Features left to implement
-* As we gain more business and more customers, we can add extra functionality on the products. i.e we can implement a color function for the customers tu be able to select different product colours.
+* As we gain more business and more customers, we can add extra functionality on the products. i.e we can implement a color function for the customers to be able to select different product colours.
 * We can also implement a sorting functionality so that only products of a certain colour to be desplayed.
-* A pre ordering functionality for the products that are soon to be released by Apple so that the customers can put pre order them.
+* A pre ordering functionality for the products that are soon to be released by Apple so that the customers can pre order them.
 
 ---
 
@@ -55,7 +55,7 @@ The following are the user stories this e-commerce website has bee built one:
 * [jQuery](https://jquery.com) and [JavaScript](https://www.javascript.com): The project uses them for interactive elements.
 * [Python](https://www.python.org): The project uses Python to run the application, for build control and management of applications.
 * [Bootstrap](https://https://getbootstrap.com/): The project uses Bootstrap for layout, responsiveness and elements.
-* [Font Awesome](https://materializecss.com): The project uses Material Icons for icons.
+* [Font Awesome](https://fontawesome.com/): The project uses Fontawesome Icons for icons.
 * [Django](https://https://www.djangoproject.com/): The project uses Django as the framework.
 * [Jinja](https://jinja.palletsprojects.com/en/2.11.x/): The project uses Jinja as the templating language.
 * [Stripe](https://stripe.com): The project uses Stripe for payment processing.
@@ -91,7 +91,7 @@ The following tools and devices have been used to test the website in several di
 * [Apple iPad Air 2nd Generation](https://www.amazon.co.uk/Apple-iPad-Air-10-5-inch-Wi-Fi-64GB/dp/B07NHQQ27K/ref=sr_1_16?crid=26JWMWRCVIBDE&dchild=1&keywords=ipad+air+2nd+generation&qid=1597952866&sprefix=ipad+air+2nd%2Caps%2C212&sr=8-16): for testing it's responsivenes on iPads and screens smaller than a regula laptop, I used my iPad Air connected to my lapop wirelesslly. The results were positive as all its functiones worked as normal.
 * [Apple iPhone 7](https://www.amazon.co.uk/Apple-iPhone-SIM-Free-Smartphone-Refurbished/dp/B01MUEA4PM/ref=sr_1_5?dchild=1&keywords=Apple+iphone+7&qid=1608274525&sr=8-5): havig all three Apple devices connected to my iCloud Account, I managed to phisically test my website on my iPhone 7 without any issues. The website was responsive and all its functions worked as normal.
 
-### Devices Simulated With In Chrome Dev Tools.
+### Devices Used For Simulated Testing Within Chrome Dev Tools.
 
 * Samsung Galaxy S9/S9+
 * iPhone 6/7/8
@@ -145,7 +145,7 @@ I created my project on GitHub and used GitPod's development environment to writ
 ## CREDITS
 
 ### Content
-* For this project I have manually created avery single product in the admin panel. All products have been researched by myself and images, titles, descriptions and current prices have been extracted from Currys/PC World so every details is current to December 2020 statistics.
+* For this project I have manually created avery single product in the admin panel. All products have been researched by myself and images, titles, descriptions and current prices have been extracted from Currys/PC World website, so every details is current to December 2020 statistics.
 
 ### Media
 * The Logo was created by myself using Adobe Lightroom.
@@ -153,4 +153,4 @@ I created my project on GitHub and used GitPod's development environment to writ
 ### Acknowledgements
 * My Mentor __Owonikoko Oluwaseun__ for helping me through the project with her advice and guidance.
 * Slack Community for their replies and good advices.
-* Tutor Support for answering my questions and explaining a few things step by step.
+* Tutor Support for answering my questions and explaining a few things step by step. A special THANK YOU to Miklos, Haley, Cormac who have also tested my Heroku App and it's functionality and confirmed that it functions corectly.
