@@ -1,11 +1,11 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404 
+from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
 from django.contrib import messages
 
 from products.models import Product
 
 
 def view_shoppingbag(request):
-    
+
     """ Returning the index page """
     shoppingbag = request.session.get('shoppingbag', {})
     return render(request, "shoppingbag/shoppingbag.html")
@@ -47,7 +47,7 @@ def adjust_bag(request, item_id):
 
     request.session['shoppingbag'] = shoppingbag
     return redirect(reverse('view_shoppingbag'))
-    
+
 
 def remove_from_bag(request, item_id):
     """ Remove the item from the shoppind bag """
@@ -59,7 +59,7 @@ def remove_from_bag(request, item_id):
         if quantity == 0:
             shoppingbag.pop(item_id)
             messages.success(request, f'Removed {product.nema} from your bag')
-            
+
         request.session['shoppingbag'] = shoppingbag
         return HttpResponse(status=200)
     except Exception as e:

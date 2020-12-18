@@ -2,8 +2,8 @@ from django.contrib import admin
 from .models import Article
 
 # Register your models here.
- 
- # Article Model
+
+# Article Model
 
 
 class ArticleAdmin(admin.ModelAdmin):
