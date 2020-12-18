@@ -1,10 +1,6 @@
-<div align="center">
-  <img src="https://github.com/stanciudorin/Dictionary-Project/blob/master/static/images/Site%20Preview.png?raw=true" align="center" style="margin: 0;">
-</div>
+# MILESTONE PROJECT 3: [Apple Items](https://appleitems.herokuapp.com/)
 
-# MILESTONE PROJECT 3: [ABC DICTIONARY](https://dictionary-project.herokuapp.com/)
-
-## SOURCE: [Project Repository](https://github.com/stanciudorin/Dictionary-Project)
+## SOURCE: [Project Repository](https://github.com/stanciudorin/appleitems)
 
 ## ABOUT THE PROJECT
 <p>This is the website for APPLE ITEMS, and e-commerce fictional website for a start-up that wants to promote their business and sell their products online around the world.
